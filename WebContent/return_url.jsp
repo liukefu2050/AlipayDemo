@@ -24,7 +24,7 @@
  */
  
 	//获取支付宝GET过来反馈信息
-	Map<String,String> params = new HashMap<String,String>();
+	Map<String,String> params = new HashMap<>();
 	Map<String,String[]> requestParams = request.getParameterMap();
 	for (Iterator<String> iter = requestParams.keySet().iterator(); iter.hasNext();) {
 		String name = (String) iter.next();
@@ -51,10 +51,10 @@
 	
 		//付款金额
 		String total_amount = new String(request.getParameter("total_amount").getBytes("ISO-8859-1"),"UTF-8");
-		
-		out.println("trade_no:"+trade_no+"<br/>out_trade_no:"+out_trade_no+"<br/>total_amount:"+total_amount);
+
+		System.out.println("trade_no:"+trade_no+"<br/>out_trade_no:"+out_trade_no+"<br/>total_amount:"+total_amount);
 	}else {
-		out.println("验签失败");
+		System.out.println("验签失败");
 	}
 	//——请在这里编写您的程序（以上代码仅作参考）——
 %>
