@@ -1,28 +1,17 @@
 ※MAVEN※
-运行mvn clean和mvn install
-
-※运行环境※
-
-Eclipse+JDK1.6及以上+Tomcat6.0及以上
+把支付宝demo 改造成maven 项目
 
 
 ※使用方法※
 
-SDK下载地址：
-https://doc.open.alipay.com/docs/doc.htm?treeId=193&articleId=103419&docType=1
+第一步；git clone "https://github.com/liukefu2050/AlipayDemo.git",项目根目录运行cmd:mvn install,安装支付sdk。
 
-第一步；请下载【JAVA版资源】的SDK。
-
-第二步：下载完毕后，把压缩包解压。
-
-第三步：压缩包alipay-sdk-javaXXX.jar、commons-logging-1.1.1.jar架包文件放入工程项目alipay.trade.page.pay-PHP-UTF-8\WebContent\WEB-INF\lib中。
-
-第四步：打开AlipayConfig.java文件，设置请求参数信息并保存，请求参数信息有：app_id、merchant_private_key、alipay_public_key、return_url、notify_url。
+第二步：打开AlipayConfig.java文件，设置请求参数信息并保存，请求参数信息有：app_id、merchant_private_key、alipay_public_key、return_url、notify_url。
 bizContent的各个请求参数用法与拼接方式，见文档：https://doc.open.alipay.com/docs/doc.htm?treeId=270&articleId=105899&docType=1
 
-第五步：运行index.jsp文件
+第三步：配置tomcat或jetty,访问index.jsp
 
-第六步：体验支付流程，看效果等。
+第四步：体验支付流程，看效果等。
 
 
 ※业务处理注意事项※
