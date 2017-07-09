@@ -28,8 +28,9 @@
 	
 	alipayRequest.setBizContent("{\"out_trade_no\":\""+ out_trade_no +"\"," 
 			+ "\"total_amount\":\""+ total_amount +"\"," 
-			+ "\"subject\":\""+ subject +"\"," 
-			+ "\"body\":\""+ body +"\"," 
+			+ "\"subject\":\""+ subject +"\","
+			+ "\"body\":\""+ body +"\","
+			+ "\"enable_pay_channels\":\"bankPay,credit_group,balance,moneyFund,debitCardExpress\","
 			+ "\"product_code\":\"FAST_INSTANT_TRADE_PAY\"}");
 	
 	//若想给BizContent增加其他可选请求参数，以增加自定义超时时间参数timeout_express来举例说明
