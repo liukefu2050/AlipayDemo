@@ -4,7 +4,8 @@
 
 ※使用方法※
 
-第一步；git clone "https://github.com/liukefu2050/AlipayDemo.git",项目根目录运行cmd:mvn install,安装支付sdk。
+第一步；git clone "https://github.com/liukefu2050/AlipayDemo.git"
+项目根目录运行cmd:mvn install,安装支付sdk。
 
 第二步：打开AlipayConfig.java文件，设置请求参数信息并保存，请求参数信息有：app_id、merchant_private_key、alipay_public_key、return_url、notify_url。
 bizContent的各个请求参数用法与拼接方式，见文档：https://doc.open.alipay.com/docs/doc.htm?treeId=270&articleId=105899&docType=1
