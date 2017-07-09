@@ -26,29 +26,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
-
-	<profiles>
-		<profile>
-			<id>local</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<runtime.env>src/main/resources</runtime.env>
-			</properties>
-		</profile>
-	</profiles>
-
 	<build>
-		<resources>
-			<resource>
-				<targetPath>lib/</targetPath>
-				<directory>lib/</directory>
-				<includes>
-					<include>**/*.jar</include>
-				</includes>
-			</resource>
-		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -60,11 +38,6 @@
 					</archive>
 					<warName>alipayDemo-${version}</warName>
 					<webResources>
-						<resource>
-							<directory>${runtime.env}</directory>
-							<targetPath>WEB-INF/classes</targetPath>
-							<filtering>true</filtering>
-						</resource>
 						<resource>
 							<directory>src/main/resources</directory>
 							<targetPath>WEB-INF/classes</targetPath>
